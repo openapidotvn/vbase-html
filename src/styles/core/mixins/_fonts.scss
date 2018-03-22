@@ -1,0 +1,8 @@
+@mixin make-font-face($file, $name, $weight: normal, $style: normal) {
+   @font-face{
+    font-family: $name;
+    src: url('#{$font-path}/#{$file}.woff2') format('woff2'), url('#{$font-path}/#{$file}.woff') format('woff');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}

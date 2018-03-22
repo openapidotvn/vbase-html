@@ -1,0 +1,18 @@
+@mixin eq-height() {
+  display: flex;
+  flex-wrap: wrap;
+
+  &:after,
+  &:before {
+    content: normal; // IE doesn't support `initial`
+  }
+
+  > div {
+    background-clip: content-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; // FF 47-
+    -webkit-flex-direction: row; // iOS safari
+    -ms-flex-direction: column; // IE11
+  }
+}

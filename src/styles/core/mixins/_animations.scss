@@ -1,0 +1,10 @@
+@mixin default-transition() {
+  transition: all 0.2s ease-in-out;
+}
+@mixin default-hover() {
+   @include default-transition();
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

@@ -1,2 +1,2 @@
 # vbase-html
-vBase HTML
+vbase-html

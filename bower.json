@@ -1,0 +1,21 @@
+{
+  "name": "vbase-html",
+  "description": "vHTML Boilerplate",
+  "main": "index.js",
+  "authors": [
+    "Hung Pham Do"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "2.2.4",
+    "bootstrap": "3.3.7",
+    "bootstrap-sass": "3.3.7",
+    "animate-sass": "^0.8.2"
+  }
+}
