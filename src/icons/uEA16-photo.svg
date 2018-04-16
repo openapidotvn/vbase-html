@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Web-PC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cong-Dong-ChiTiet" transform="translate(-222.000000, -735.000000)" fill="#83909E" fill-rule="nonzero">
+            <g id="LEFT" transform="translate(214.000000, 586.000000)">
+                <g id="Group-4">
+                    <g id="2-copy-2" transform="translate(6.000000, 145.000000)">
+                        <g id="icons8-about" transform="translate(2.000000, 4.000000)">
+                            <g id="icons8-picture">
+                                <path d="M0,1 L0,15 C6.76353751e-17,15.5522847 0.44771525,16 1,16 L19,16 C19.5522847,16 20,15.5522847 20,15 L20,1 C20,0.44771525 19.5522847,-1.01453063e-16 19,0 L1,0 C0.44771525,1.01453063e-16 -6.76353751e-17,0.44771525 0,1 Z M2,2 L18,2 L18,14 L2,14 L2,2 Z M15,4 C14.4472655,4 14,4.4472655 14,5 C14,5.5527345 14.4472655,6 15,6 C15.5527345,6 16,5.5527345 16,5 C16,4.4472655 15.5527345,4 15,4 Z M6.90625,5 L4,7.34220532 L4,12 L16,12 L16,9.31178707 L12.953125,7.20912548 L10.3984375,8.51330798 L6.90625,5 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -34,24 +34,31 @@ gulp.task('fonts', () => {
 gulp.task('icons', () => {
   return gulp.src('src/icons/**/*.svg')
     .pipe($.iconfont({
-      fontName: 'vbase-icon', // required
+      normalize: true,
+      fontHeight: 1001,
+      fontName: packageInfo.icons.fontName, // required
       prependUnicode: true, // recommended option
       formats: ['ttf', 'eot', 'woff', 'woff2', 'svg'], // default, 'woff2' and 'svg' are available
       timestamp: Math.round(Date.now() / 1000), // recommended to get consistent builds when watching files
     }))
     .on('glyphs', function (glyphs, options) {
-      // CSS templating, e.g.
-      console.log(glyphs, options);
-      gulp.src('src/styles/helpers/_icon.scss')
-        .pipe($.consolidate('lodash', {
-          glyphs: glyphs,
-          fontName: 'vbase',
-          fontPath: 'app/assets/fonts',
-          className: 'vbase'
-        }))
-        .pipe(gulp.dest('src/styles/app/common/'));
+      const opts = {
+        glyphs: glyphs.map(function (glyph) {
+          return { name: glyph.name, codepoint: glyph.unicode[0].charCodeAt(0) };
+        }),
+        fontName: packageInfo.icons.fontName,
+        className: packageInfo.icons.className
+      };
+      gulp.src('src/templates/helpers/icons-scss.njk')
+        .pipe($.consolidate('lodash', opts))
+        .pipe($.rename('_icons.scss'))
+        .pipe(gulp.dest('src/styles/helpers'));
+
+      gulp.src('src/templates/helpers/icons.njk')
+        .pipe($.consolidate('lodash', opts))
+        .pipe(gulp.dest('src/templates'));
     })
-    .pipe(gulp.dest('app/assets/fonts'));
+    .pipe(gulp.dest('src/fonts'));
 });
 
 
@@ -139,7 +146,7 @@ gulp.task('build', () => {
 
 gulp.task('serve', () => {
   runSequence(['wiredep'], [
-    'views', 'styles', 'scripts', 'images', 'fonts'
+    'views', 'styles', 'scripts', 'images', 'icons', 'fonts'
   ], () => {
     browserSync.init({
       notify: false,
@@ -162,6 +169,7 @@ gulp.task('serve', () => {
   gulp.watch('src/styles/**/*.scss', ['styles']);
   gulp.watch('src/scripts/**/*.js', ['scripts']);
   gulp.watch('src/fonts/**/*', ['fonts']);
+  gulp.watch('src/icons/**/*', ['icons']);
   gulp.watch('src/images/**/*', ['images']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
 });

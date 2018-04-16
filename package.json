@@ -53,5 +53,9 @@
     "rimraf": "^2.6.2",
     "run-sequence": "^1.2.2",
     "wiredep": "^4.0.0"
+  },
+  "icons": {
+    "fontName": "vbase-icon",
+    "className": "vbase-icon"
   }
 }

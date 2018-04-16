@@ -1,0 +1,69 @@
+{% extends "layouts/default.njk" %}
+{% set pageTitle = 'Icon' %}
+{% set bodyClasses = '' %}
+{% block content %}
+  <style>
+    body{
+      background-color: #f6f6f6 !important;
+      color: #333 !important;
+    }
+    
+    .glyph{
+          padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    .glyph li {
+      float: left;
+    width: 10%;
+    padding: 10px 10px 5px 10px;
+    line-height: 3;
+    text-align: center;
+    border-radius: 4px;
+    background-clip: content-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+    }
+
+    .glyph li:hover{
+      background: #4dadf7;
+      color: #fff !important;
+      box-shadow: 0 0.25rem 0.125rem 0 rgba(0,0,0,.05);
+    }
+
+    .glyph-name{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: block;
+      line-height: 2;
+    }
+  </style>
+  <br/>
+  <h1 class="text-center"><%= fontName %></h1>
+  <br/>
+  <div class="container">
+    <ul class="glyph clearfix"><% _.each(glyphs, function(glyph) { %>
+      <li title="<%= glyph.codepoint.toString(16).toUpperCase() %>">
+        <i class="<%= className %> icon-<%= glyph.name %> icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name"><%= glyph.name %></span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint"><%= glyph.codepoint.toString(16).toUpperCase() %></span> #}
+        </div>
+      </li><% }); %>
+    </ul>
+  </div>
+{% endblock %}
