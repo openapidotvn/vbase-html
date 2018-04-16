@@ -1,11 +1,30 @@
+/*
+    VARIABLES MIXINS
+*/
 
-@import "core/variables-mixins";
+@import "shared/variables-mixins";
+/*
+    CSS3 Animation
+*/
 
-/*animated*/
 @import "vendors/animate";
+/*
+    Helpers
+*/
 
-/* helpers */
-@import "core/style";
+@import "helpers/ie10-viewport-bug-workaround";
+@import "helpers/grid";
+@import "helpers/fonts";
+@import "helpers/icons";
+@import "helpers/text";
+@import "helpers/vertical-align";
+/* Global */
 
-/* app */
-@import "app/style";
+@import "shared/global";
+/* Components */
+
+@import "components/header";
+@import "components/footer";
+/* App */
+
+@import "home/common";

@@ -9,7 +9,7 @@
     "prestart": "npm run clean",
     "prebuild": "npm run clean",
     "start": "gulp serve",
-    "clean": "gulp clean",
+    "clean": "rimraf ./dist && rimraf ./app",
     "build": "gulp build"
   },
   "repository": {
@@ -33,6 +33,7 @@
     "gulp-babel": "^6.1.2",
     "gulp-cache": "^1.0.2",
     "gulp-concat": "^2.6.1",
+    "gulp-consolidate": "^0.2.0",
     "gulp-cssnano": "^2.1.2",
     "gulp-filter": "^5.1.0",
     "gulp-header": "^1.8.9",
@@ -49,6 +50,7 @@
     "gulp-uglify": "^3.0.0",
     "gulp-useref": "^3.1.5",
     "main-bower-files": "^2.13.1",
+    "rimraf": "^2.6.2",
     "run-sequence": "^1.2.2",
     "wiredep": "^4.0.0"
   }
