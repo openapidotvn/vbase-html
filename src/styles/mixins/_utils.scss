@@ -1,10 +1,10 @@
-@mixin eq-height() {
+@mixin eq-height {
   display: flex;
   flex-wrap: wrap;
 
-  &:after,
-  &:before {
-    content: normal; // IE doesn't support `initial`
+  &::after,
+  &::before {
+    content: normal; // IE doesn"t support `initial`
   }
 
   > div {

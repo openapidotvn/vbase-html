@@ -55,6 +55,7 @@
     "main-bower-files": "^2.13.1",
     "rimraf": "^2.6.2",
     "run-sequence": "^1.2.2",
+    "sass-lint": "^1.12.1",
     "wiredep": "^4.0.0"
   },
   "icons": {
