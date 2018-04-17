@@ -1,6 +1,6 @@
 # [vBase HTML](https://github.com/openapidotvn/vbase-html)
 
-A front-end boilerplate for converting PSD/Sketch to HTML/CSS JavaScript focused on performance and best practices.
+A front-end was boilerplate for converting PSD/Sketch to HTML/CSS/JavaScripts It's focused on performance and best practices.
 
 [![Build Status](https://travis-ci.org/openapidotvn/vbase-html.svg?branch=master)](https://travis-ci.org/openapidotvn/vbase-html)
 
