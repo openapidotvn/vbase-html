@@ -1,0 +1,14 @@
+//## Bootstrap
+//
+// Core bootstrap variables and mixins
+$img-path: "../images";
+$font-path: "../fonts";
+$icon-path: "../images/icons";
+$primary-color: #ffa726;
+$text-color: #333;
+$white-color: #fff;
+$black-color: #000;
+$secondary-color: #999;
+$border-color: #eee;
+
+@import "bootstrap-override";

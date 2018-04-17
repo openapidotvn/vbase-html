@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="21px" viewBox="0 0 20 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Web-PC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cong-Dong-ChiTiet" transform="translate(-222.000000, -657.000000)" fill="#83909E" fill-rule="nonzero">
+            <g id="LEFT" transform="translate(214.000000, 586.000000)">
+                <g id="Group-4">
+                    <g id="2" transform="translate(6.000000, 69.000000)">
+                        <g id="icons8-about" transform="translate(2.000000, 2.000000)">
+                            <path d="M2,0 C0.90625,0 0,0.90625 0,2 L0,20.40625 L1.71875,18.71875 L4.4375,16 L18,16 C19.09375,16 20,15.09375 20,14 L20,2 C20,0.90625 19.09375,0 18,0 L2,0 Z M2,2 L18,2 L18,14 L3.59375,14 L3.28125,14.28125 L2,15.5625 L2,2 Z M9,4 L9,6 L11,6 L11,4 L9,4 Z M9,7 L9,12 L11,12 L11,7 L9,7 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
