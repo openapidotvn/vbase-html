@@ -20,6 +20,6 @@ window.vBaseScript = (() => {
   };
 })();
 
-$('document').ready(() => {
+$(document).ready(() => {
   window.vBaseScript.init();
 });

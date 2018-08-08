@@ -34,7 +34,7 @@ gulp.task('fonts', () => {
 gulp.task('icons', () => {
   return gulp.src('src/icons/**/*.svg')
     .pipe($.iconfont({
-      fontHeight: 1001, 
+      fontHeight: 1001,
       normalize: true,
       fontName: packageInfo.icons.fontName, // required
       prependUnicode: true, // recommended option

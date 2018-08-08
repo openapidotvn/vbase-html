@@ -3,283 +3,79 @@
 {% set bodyClasses = '' %}
 {% block content %}
   <style>
-    body{
+    body {
       background-color: #f6f6f6 !important;
       color: #333 !important;
     }
-    
-    .glyph{
-          padding-left: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+
+    .glyph {
     }
 
-    .glyph li {
-      float: left;
-    width: 10%;
-    padding: 10px 10px 5px 10px;
-    line-height: 3;
-    text-align: center;
-    border-radius: 4px;
-    background-clip: content-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-            align-items: center;
+    .glyph .item {
     }
 
-    .glyph li:hover{
+    .glyph .item:hover {
       background: #4dadf7;
       color: #fff !important;
       box-shadow: 0 0.25rem 0.125rem 0 rgba(0,0,0,.05);
     }
 
-    .glyph-name{
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      display: block;
-      line-height: 2;
+    .glyph-name {
+      line-height: 1.5;
     }
   </style>
   <br/>
   <h1 class="text-center">vbase-icon</h1>
   <br/>
   <div class="container">
-    <ul class="glyph clearfix">
-      <li title="EA01">
-        <i class="vbase-icon icon-about icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">about</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA01</span> #}
-        </div>
-      </li>
-      <li title="EA02">
-        <i class="vbase-icon icon-add-user icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">add-user</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA02</span> #}
-        </div>
-      </li>
-      <li title="EA03">
-        <i class="vbase-icon icon-add-white icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">add-white</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA03</span> #}
-        </div>
-      </li>
-      <li title="EA04">
-        <i class="vbase-icon icon-add icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">add</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA04</span> #}
-        </div>
-      </li>
-      <li title="EA05">
-        <i class="vbase-icon icon-angry icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">angry</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA05</span> #}
-        </div>
-      </li>
-      <li title="EA07">
-        <i class="vbase-icon icon-bell icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">bell</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA07</span> #}
-        </div>
-      </li>
-      <li title="EA08">
-        <i class="vbase-icon icon-camera icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">camera</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA08</span> #}
-        </div>
-      </li>
-      <li title="EA09">
-        <i class="vbase-icon icon-check icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">check</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA09</span> #}
-        </div>
-      </li>
-      <li title="EA0A">
-        <i class="vbase-icon icon-comment icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">comment</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA0A</span> #}
-        </div>
-      </li>
-      <li title="EA0B">
-        <i class="vbase-icon icon-edit-user icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">edit-user</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA0B</span> #}
-        </div>
-      </li>
-      <li title="EA0C">
-        <i class="vbase-icon icon-edit icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">edit</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA0C</span> #}
-        </div>
-      </li>
-      <li title="EA0D">
-        <i class="vbase-icon icon-expand icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">expand</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA0D</span> #}
-        </div>
-      </li>
-      <li title="EA0E">
-        <i class="vbase-icon icon-facebook icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">facebook</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA0E</span> #}
-        </div>
-      </li>
-      <li title="EA10">
-        <i class="vbase-icon icon-fire icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">fire</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA10</span> #}
-        </div>
-      </li>
-      <li title="EA13">
-        <i class="vbase-icon icon-like icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">like</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA13</span> #}
-        </div>
-      </li>
-      <li title="EA14">
-        <i class="vbase-icon icon-list icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">list</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA14</span> #}
-        </div>
-      </li>
-      <li title="EA15">
-        <i class="vbase-icon icon-more icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">more</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA15</span> #}
-        </div>
-      </li>
-      <li title="EA16">
-        <i class="vbase-icon icon-photo icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">photo</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA16</span> #}
-        </div>
-      </li>
-      <li title="EA17">
-        <i class="vbase-icon icon-play icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">play</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA17</span> #}
-        </div>
-      </li>
-      <li title="EA18">
-        <i class="vbase-icon icon-refresh icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">refresh</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA18</span> #}
-        </div>
-      </li>
-      <li title="EA19">
-        <i class="vbase-icon icon-rocket icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">rocket</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA19</span> #}
-        </div>
-      </li>
-      <li title="EA1A">
-        <i class="vbase-icon icon-search icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">search</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA1A</span> #}
-        </div>
-      </li>
-      <li title="EA1B">
-        <i class="vbase-icon icon-share icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">share</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA1B</span> #}
-        </div>
-      </li>
-      <li title="EA1C">
-        <i class="vbase-icon icon-target icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">target</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA1C</span> #}
-        </div>
-      </li>
-      <li title="EA1D">
-        <i class="vbase-icon icon-user icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">user</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA1D</span> #}
-        </div>
-      </li>
-      <li title="EA1E">
-        <i class="vbase-icon icon-users icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">users</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA1E</span> #}
-        </div>
-      </li>
-      <li title="EA1F">
-        <i class="vbase-icon icon-video icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">video</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA1F</span> #}
-        </div>
-      </li>
-      <li title="EA20">
-        <i class="vbase-icon icon-write icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name">write</span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint">EA20</span> #}
-        </div>
-      </li>
-    </ul>
+    <div class="glyph clearfix">
+      <div class="row">
+        
+          <div class="col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-4 col-4 pl-2 pr-2 mb-3">
+            <div class="px-2 py-3 item d-flex align-items-center flex-column rounded h-100" title="EA01">
+              <i class="vbase-icon icon-code icon-2x"></i>
+              <div style="margin-top: 5px">
+                <span class="glyph-name d-block text-truncate">code</span>
+                {# <br/> #}
+                {# <span class="glyph-codepoint">EA01</span> #}
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-4 col-4 pl-2 pr-2 mb-3">
+            <div class="px-2 py-3 item d-flex align-items-center flex-column rounded h-100" title="EA02">
+              <i class="vbase-icon icon-css3 icon-2x"></i>
+              <div style="margin-top: 5px">
+                <span class="glyph-name d-block text-truncate">css3</span>
+                {# <br/> #}
+                {# <span class="glyph-codepoint">EA02</span> #}
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-4 col-4 pl-2 pr-2 mb-3">
+            <div class="px-2 py-3 item d-flex align-items-center flex-column rounded h-100" title="EA03">
+              <i class="vbase-icon icon-html5 icon-2x"></i>
+              <div style="margin-top: 5px">
+                <span class="glyph-name d-block text-truncate">html5</span>
+                {# <br/> #}
+                {# <span class="glyph-codepoint">EA03</span> #}
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-4 col-4 pl-2 pr-2 mb-3">
+            <div class="px-2 py-3 item d-flex align-items-center flex-column rounded h-100" title="EA04">
+              <i class="vbase-icon icon-js icon-2x"></i>
+              <div style="margin-top: 5px">
+                <span class="glyph-name d-block text-truncate">js</span>
+                {# <br/> #}
+                {# <span class="glyph-codepoint">EA04</span> #}
+              </div>
+            </div>
+          </div>
+        
+      </div>
+    </div>
   </div>
 {% endblock %}
