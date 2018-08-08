@@ -1,14 +1,11 @@
 //VARIABLES MIXINS
 @import "shared/variables-mixins";
-//CSS3 Animation
-@import "vendors/animate";
 //Helpers
 @import "helpers/ie10-viewport-bug-workaround";
 @import "helpers/grid";
 @import "helpers/fonts";
 @import "helpers/icons";
 @import "helpers/text";
-@import "helpers/vertical-align";
 //Global
 @import "shared/global";
 //Components

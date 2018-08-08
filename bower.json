@@ -6,16 +6,34 @@
     "Hung Pham Do"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/openapidotvn/vbase-html",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components"
   ],
   "dependencies": {
-    "jquery": "2.2.4",
-    "bootstrap": "3.3.7",
-    "bootstrap-sass": "3.3.7",
-    "animate-sass": "^0.8.2"
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "bootstrap": "4.1.3"
+  },
+  "overrides": {
+    "jquery": {
+      "main": [
+        "dist/jquery.js"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "js/dist/util.js",
+        "js/dist/dropdown.js",
+        "js/dist/collapse.js"
+      ]
+    },
+    "popper": {
+      "main": [
+        "dist/umd/popper.js"
+      ]
+    }
   }
 }

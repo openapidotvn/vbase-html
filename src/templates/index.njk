@@ -2,5 +2,27 @@
 {% set pageTitle = 'Trang chủ' %}
 {% set bodyClasses = '' %}
 {% block content %}
-  body
+  <div class="container">
+    <div class="jumbotron my-5">
+      <h1 class="display-4">Hello, world!</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+    <div class="row">
+      {% for i in range(0, 12) %}
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card mb-4">
+            <img class="card-img-top" src="http://via.placeholder.com/370x185" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 {% endblock %}

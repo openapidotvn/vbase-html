@@ -1,163 +1,45 @@
 @font-face {
-    font-family: "vbase-icon";
-    src: url("#{$font-path}/vbase-icon.eot");
-    src: url("#{$font-path}/vbase-icon.eot?#iefix") format("eot"),
-    url("#{$font-path}/vbase-icon.woff2") format("woff2"),
-    url("#{$font-path}/vbase-icon.woff") format("woff"),
-    url("#{$font-path}/vbase-icon.ttf") format("truetype"),
-    url("#{$font-path}/vbase-icon.svg#vbase-icon") format("svg");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "vbase-icon";
+  src: url('#{$font-path}/vbase-icon.eot');
+  src: url('#{$font-path}/vbase-icon.eot?#iefix') format('eot'),
+    url('#{$font-path}/vbase-icon.woff2') format('woff2'),
+    url('#{$font-path}/vbase-icon.woff') format('woff'),
+    url('#{$font-path}/vbase-icon.ttf') format('truetype'),
+    url('#{$font-path}/vbase-icon.svg#vbase-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.vbase-icon {
-    display: inline-block;
-    font-family: "vbase-icon";
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+.vbase-icon{
+  display: inline-block;
+  font-family: "vbase-icon";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-lg {
-    font-size: 1.3333333333333333em;
-    line-height: 0.75em;
-    vertical-align: -15%;
+  font-size: 1.3333333333333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
 }
-
-.icon-2x {
-    font-size: 2em;
-}
-
-.icon-3x {
-    font-size: 3em;
-}
-
-.icon-4x {
-    font-size: 4em;
-}
-
-.icon-5x {
-    font-size: 5em;
-}
-
+.icon-2x { font-size: 2em; }
+.icon-3x { font-size: 3em; }
+.icon-4x { font-size: 4em; }
+.icon-5x { font-size: 5em; }
 .icon-fw {
-    width: 1.2857142857142858em;
-    text-align: center;
+  width: 1.2857142857142858em;
+  text-align: center;
 }
 
-.icon-about:before {
-    content: "\EA01"
-}
-
-.icon-add-user:before {
-    content: "\EA02"
-}
-
-.icon-add-white:before {
-    content: "\EA03"
-}
-
-.icon-add:before {
-    content: "\EA04"
-}
-
-.icon-angry:before {
-    content: "\EA05"
-}
-
-.icon-bell:before {
-    content: "\EA07"
-}
-
-.icon-camera:before {
-    content: "\EA08"
-}
-
-.icon-check:before {
-    content: "\EA09"
-}
-
-.icon-comment:before {
-    content: "\EA0A"
-}
-
-.icon-edit-user:before {
-    content: "\EA0B"
-}
-
-.icon-edit:before {
-    content: "\EA0C"
-}
-
-.icon-expand:before {
-    content: "\EA0D"
-}
-
-.icon-facebook:before {
-    content: "\EA0E"
-}
-
-.icon-fire:before {
-    content: "\EA10"
-}
-
-.icon-like:before {
-    content: "\EA13"
-}
-
-.icon-list:before {
-    content: "\EA14"
-}
-
-.icon-more:before {
-    content: "\EA15"
-}
-
-.icon-photo:before {
-    content: "\EA16"
-}
-
-.icon-play:before {
-    content: "\EA17"
-}
-
-.icon-refresh:before {
-    content: "\EA18"
-}
-
-.icon-rocket:before {
-    content: "\EA19"
-}
-
-.icon-search:before {
-    content: "\EA1A"
-}
-
-.icon-share:before {
-    content: "\EA1B"
-}
-
-.icon-target:before {
-    content: "\EA1C"
-}
-
-.icon-user:before {
-    content: "\EA1D"
-}
-
-.icon-users:before {
-    content: "\EA1E"
-}
-
-.icon-video:before {
-    content: "\EA1F"
-}
-
-.icon-write:before {
-    content: "\EA20"
-}
+.icon-code:before { content: "\EA01" }
+.icon-css3:before { content: "\EA02" }
+.icon-html5:before { content: "\EA03" }
+.icon-js:before { content: "\EA04" }

@@ -3,67 +3,46 @@
 {% set bodyClasses = '' %}
 {% block content %}
   <style>
-    body{
+    body {
       background-color: #f6f6f6 !important;
       color: #333 !important;
     }
-    
-    .glyph{
-          padding-left: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+
+    .glyph {
     }
 
-    .glyph li {
-      float: left;
-    width: 10%;
-    padding: 10px 10px 5px 10px;
-    line-height: 3;
-    text-align: center;
-    border-radius: 4px;
-    background-clip: content-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-            align-items: center;
+    .glyph .item {
     }
 
-    .glyph li:hover{
+    .glyph .item:hover {
       background: #4dadf7;
       color: #fff !important;
       box-shadow: 0 0.25rem 0.125rem 0 rgba(0,0,0,.05);
     }
 
-    .glyph-name{
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      display: block;
-      line-height: 2;
+    .glyph-name {
+      line-height: 1.5;
     }
   </style>
   <br/>
   <h1 class="text-center"><%= fontName %></h1>
   <br/>
   <div class="container">
-    <ul class="glyph clearfix"><% _.each(glyphs, function(glyph) { %>
-      <li title="<%= glyph.codepoint.toString(16).toUpperCase() %>">
-        <i class="<%= className %> icon-<%= glyph.name %> icon-2x"></i>
-        <div style="margin-top: 5px">
-          <span class="glyph-name"><%= glyph.name %></span>
-          {# <br/> #}
-          {# <span class="glyph-codepoint"><%= glyph.codepoint.toString(16).toUpperCase() %></span> #}
-        </div>
-      </li><% }); %>
-    </ul>
+    <div class="glyph clearfix">
+      <div class="row">
+        <% _.each(glyphs, function(glyph) { %>
+          <div class="col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-4 col-4 pl-2 pr-2 mb-1">
+            <div class="px-2 py-3 item d-flex align-items-center flex-column rounded h-100" title="<%= glyph.codepoint.toString(16).toUpperCase() %>">
+              <i class="<%= className %> icon-<%= glyph.name %> icon-2x"></i>
+              <div style="margin-top: 5px">
+                <span class="glyph-name d-block text-truncate"><%= glyph.name %></span>
+                {# <br/> #}
+                {# <span class="glyph-codepoint"><%= glyph.codepoint.toString(16).toUpperCase() %></span> #}
+              </div>
+            </div>
+          </div>
+        <% }); %>
+      </div>
+    </div>
   </div>
 {% endblock %}
